@@ -4,7 +4,9 @@
   "description": "This is the reposotory for my personal project, a doggie daycare application.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd client && npm i",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/G3TSN1P3D/redesigned-computing-machine/issues"
   },
-  "homepage": "https://github.com/G3TSN1P3D/redesigned-computing-machine#readme"
+  "homepage": "https://github.com/G3TSN1P3D/redesigned-computing-machine#readme",
+  "dependencies": {
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.15.1",
+    "react-router-dom": "^6.3.0"
+  }
 }
