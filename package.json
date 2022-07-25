@@ -1,0 +1,20 @@
+{
+  "name": "redesigned-computing-machine",
+  "version": "1.0.0",
+  "description": "This is the reposotory for my personal project, a doggie daycare application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G3TSN1P3D/redesigned-computing-machine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G3TSN1P3D/redesigned-computing-machine/issues"
+  },
+  "homepage": "https://github.com/G3TSN1P3D/redesigned-computing-machine#readme"
+}
