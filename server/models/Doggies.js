@@ -29,5 +29,14 @@ const doggieSchema = new Schema(
             required: true,
             default: Date.now,
         }
+    },
+    {
+        toJSON: {
+            virtuals: true,
+        },
     }
 );
+
+    const Doggies = model("Doggies", doggieSchema)
+
+module.exports = Doggies;
