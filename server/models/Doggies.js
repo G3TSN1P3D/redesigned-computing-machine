@@ -11,7 +11,7 @@ const doggieSchema = new Schema(
             required: true,
         },
         phoneNumber: {
-            type: Number,
+            type: String,
             required: true,
             unique: true,
             match: [/^\d{10}$/, "Must use a valid phone number"],
