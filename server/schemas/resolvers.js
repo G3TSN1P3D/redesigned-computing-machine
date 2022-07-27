@@ -1,6 +1,16 @@
 const Doggies = require("../models");
 
 const resolvers = {
+  Query: {
+    doggie: async (parent, { doggieId }) => {
+      const doggiesData = await Doggies.findById({ _id: doggieId });
+      return doggiesData;
+    },
+    allDoggies: async () => {
+      const doggies = await Doggies.find();
+      return doggies;
+    }
+  },
   Mutation: {
     addDoggies: async (parent, { input }) => {
       const doggies = await Doggies.create({
