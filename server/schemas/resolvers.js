@@ -27,9 +27,11 @@ const resolvers = {
       );
       return doggies;
     },
-    removeDoggies: async (parent, { doggieId }) => {
-        const doggies = await Doggies.findOneAndDelete({ _id: doggieId });
-        return doggies;
+    removeDoggie: async (parent, { doggieId }) => {
+      const doggies = await Doggies.findOneAndDelete({ _id: doggieId });
+      return doggies;
     },
   },
 };
+
+module.exports = resolvers;
