@@ -12,7 +12,8 @@ const typeDefs = gql`
         checkIn: Date
     }
     type Query {
-        doggies: Doggies
+        doggie(doggieId: ID!): Doggies
+        allDoggies: [Doggies]
     }
     input NewDoggieInput {
         dogName: String
